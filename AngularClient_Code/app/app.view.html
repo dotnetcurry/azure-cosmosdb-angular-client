@@ -1,0 +1,145 @@
+<div [hidden]="!canChange">
+    <table class="table table-bordered table-strpied">
+        <tr>
+            <td>
+                <div>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" class="form-control" [(ngModel)]="person.firstName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="middlename">Middle Name</label>
+                        <input type="text" name="middlename" class="form-control" [(ngModel)]="person.middleName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" class="form-control" [(ngModel)]="person.lastName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" class="form-control" [(ngModel)]="person.gender">
+                        <option *ngFor="let g of arrGender" value="{{g}}">{{g}}</option>
+                    </select>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Birth Date</label>
+                        <input type="text" name="dob" class="form-control" [(ngModel)]="person.birthDate" />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" class="form-control" [(ngModel)]="person.address" />
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" name="city" class="form-control" [(ngModel)]="person.city" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" name="pincode" class="form-control" [(ngModel)]="person.pincode" />
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" name="state" class="form-control" [(ngModel)]="person.state" />
+                    </div>
+
+                </div>
+            </td>
+            <td>
+                <div>
+                    <div class="form-group">
+                        <label for="qualification">Qualification</label>
+                        <select name="qualification" class="form-control" [(ngModel)]="person.qualification">
+                                 <option *ngFor="let e of arrQualification" value="{{e}}">{{e}}</option>   
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <select name="occupation" class="form-control" [(ngModel)]="person.occupation">
+                         <option *ngFor="let o of arrOccupation" value="{{o}}">{{o}}</option>   
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobtype">Job Type</label>
+                        <select [(ngModel)]="person.jobType" name="jobtype" class="form-control">
+                        <option *ngFor="let j of arrJobType" value="{{j}}">{{j}}</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="income">Income</label>
+                        <input type="text" name="income" [(ngModel)]="person.income" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" [(ngModel)]="person.email" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="hobbies">Hobbies</label>
+                        <select name="hobbies" [(ngModel)]="person.hobbies" class="form-control">
+                        <option *ngFor="let h of arrHobbies" value="{{h}}">{{h}}</option>   
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="maritalstatus">Marital Status</label>
+                        <select [(ngModel)]="person.maritalStatus" name="maritalstatus" class="form-control">
+                        <option *ngFor="let m of arrMaritalStatus" value="{{m}}">{{m}}</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="residenttype">Resident Type</label>
+                        <select [(ngModel)]="person.residentType" name="residenttype" class="form-control">
+                        <option *ngFor="let r of arrResidentType" value="{{r}}">{{r}}</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactnumber">Contact Number</label>
+                        <input type="text" [(ngModel)]="person.contactNo" name="contactnumber" class="form-control" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="New" (click)="clearInputs()" class="btn btn-default" />
+            </td>
+            <td>
+                <input type="button" value="Save" (click)="save()" class="btn btn-success" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div [hidden]="canChange">
+    <table class="table table-bordered table-strpied">
+        <tr>
+            <td>
+                <input type="button" value="Add New" class="btn btn-success" (click)="add()" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="table table-bordered table-strpied">
+                    <thead>
+                        <tr>
+                            <td *ngFor="let c of tableHeaders">{{c|uppercase}}</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of persons">
+                            <td *ngFor="let c of tableHeaders">
+                                {{p[c]}}
+                            </td>
+                            <td>
+                                <input type="button" (click)="edit(p)" value="Edit" class="btn btn-warning" />
+                            </td>
+                            <td>
+                                <input type="button" (click)="delete(p)" value="Delete" class="btn btn-danger" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

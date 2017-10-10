@@ -1,0 +1,11 @@
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\bin\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.deps.json
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\bin\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.runtimeconfig.json
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\bin\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.runtimeconfig.dev.json
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\bin\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.dll
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\bin\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.pdb
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\obj\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.csprojResolveAssemblyReference.cache
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\obj\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.csproj.CoreCompileInputs.cache
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\obj\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.AssemblyInfoInputs.cache
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\obj\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.AssemblyInfo.cs
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\obj\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.dll
+E:\Articles-Sept-2017\ASPNET_Core_CosmosDB\ASPNET_Core_COSMOS_DB\ASPNET_Core_Cosmos_DB\obj\Debug\netcoreapp2.0\ASPNET_Core_Cosmos_DB.pdb
